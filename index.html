@@ -42,7 +42,7 @@
                 <div class="header-search">
                   <form action="#" method="post">
                     <div class="header-search__box">
-                      <input type="text" placeholder="Поиск по сайту">
+                      <input class="header-search__input" type="text" placeholder="Поиск по сайту">
                       <button type="submit" class="btn-search">
                         <i class="icon-search">search</i>
                       </button>
@@ -51,7 +51,32 @@
                 </div>
               </li>
               <li class="user-cont"><a class="btn small white" href="#"><i class="icon-user">user</i>Открыть торговый счет</a></li>
-              <li class="user-profile"><a class="btn small orange full" href="#">Личный кабинет</a></li>
+              <li class="user-profile">
+                <div class="dropdown-login">
+                  <button class="btn small orange full" id="modal-login" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Личный кабинет
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="modal-login">
+                    <form action="#" method="post">
+                      <div class="form-group">
+                        <div class="dropdown-login__title">Личный кабинет</div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Логин">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Пароль">
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" class="btn dark text-uppercase full" value="Войти">
+                      </div>
+                      <div class="dropdown-login__footer text-center">
+                        <a href="#">Забыли пароль?</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -84,15 +109,98 @@
 	</header><!-- end .header -->
 	<div class="main" id="main">
     <div class="promo-slider">
-      <ul class="bxslider" id="bx__promo-slider">
-        <li>
-          <div class="container">
-      			<div class="row">
-      				<div class="col-xs-12"></div>
-      			</div>
-      		</div>
-        </li>
-      </ul>
+      <div class="promo-slider__container">
+        <ul class="bxslider" id="bx__promo-slider">
+          <li class="promo-slide1">
+            <div class="container">
+        			<div class="row">
+        				<div class="col-xs-12">
+                  <div class="promo-slider__box">
+          				  <h2>Торговля с ComeTrader</h2>
+                    <div class="promo-slider__description">
+                      <p>
+                        Торгуйте и делайте деньги!<br>
+                        Для вас доступны рынки Forex, металлов и CFD.
+                      </p>
+                    </div>
+                    <div class="promo-slider__footer">
+                      <ul class="list-unstyled horizontal">
+                        <li><a class="btn big green text-uppercase" href="#">открыть webtrader</a></li>
+                        <li class="promo-slider__icon-item"><a href="#"><i class="icon-mac">mac</i></a></li>
+                        <li class="promo-slider__icon-item"><a href="#"><i class="icon-windows">windows</i></a></li>
+                        <li class="promo-slider__icon-item"><a href="#"><i class="icon-android">android</i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+        				</div>
+        			</div>
+              <img width="1293" height="438" src="./img/content/promo-slide1.png" alt="">
+        		</div>
+          </li>
+          <li class="promo-slide2">
+            <div class="container">
+        			<div class="row">
+        				<div class="col-xs-6">
+                  <div class="promo-slider__box">
+          				  <h2>Вам бонус</h2>
+                    <div class="promo-slider__description">
+                      <p>
+                        При открытии счета на первый депозит начисляется бонус до 100%
+                      </p>
+                    </div>
+                    <div class="promo-slider__footer">
+                      <a class="btn big green text-uppercase" href="#">открыть CЧет</a>
+                    </div>
+                  </div>
+        				</div>
+        			</div>
+              <img width="696" height="438" src="./img/content/promo-slide2.png" alt="">
+        		</div>
+          </li>
+          <li class="promo-slide3">
+            <div class="container">
+        			<div class="row">
+        				<div class="col-xs-6">
+                  <div class="promo-slider__box">
+          				  <h2>Обучение Forex</h2>
+                    <div class="promo-slider__description">
+                      <p>
+                        Мастер-классы профессиональных трейдеров.
+                      </p>
+                    </div>
+                    <div class="promo-slider__footer">
+                      <a class="btn big green text-uppercase" href="#">УЗНАТЬ БОЛЬШЕ</a>
+                    </div>
+                  </div>
+        				</div>
+        			</div>
+              <img width="828" height="438" src="./img/content/promo-slide3.png" alt="">
+        		</div>
+          </li>
+          <li class="promo-slide4">
+            <div class="container">
+        			<div class="row">
+        				<div class="col-xs-7">
+                  <div class="promo-slider__box">
+          				  <h2>Партнерская программа</h2>
+                    <div class="promo-slider__description">
+                      <p>
+                        Привлекательные условия партнерства.
+                        <br>
+                        Региональные представительства и white label.
+                      </p>
+                    </div>
+                    <div class="promo-slider__footer">
+                      <a class="btn big green text-uppercase" href="#">УЗНАТЬ БОЛЬШЕ</a>
+                    </div>
+                  </div>
+        				</div>
+        			</div>
+              <img width="843" height="438" src="./img/content/promo-slide4.png" alt="">
+        		</div>
+          </li>
+        </ul>
+      </div>
     </div><!-- end .promo-slider -->
     <div class="widescreen-darkgray quotes-line">
       <div class="container">
@@ -139,10 +247,9 @@
                   </div>
                 </div>
               </div>
-              <div class="gray-side__left"></div>
             </div>
           </div>
-          <div class="col-xs-3">
+          <div class="col-xs-3 white">
             <div class="about-course__more text-center">
               <div class="about-course__more-icon">
                 <i class="icon-hat">hat</i>
@@ -157,6 +264,7 @@
           </div>
         </div>
       </div>
+      <div class="gray-side__left"></div>
     </div><!-- end .about-course -->
     <div class="widescreen-darkgray master-rating">
       <div class="container">
@@ -447,6 +555,7 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/main.js"></script>
   </body>
 </html>
